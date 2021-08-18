@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Quote
+{% endblock %}
+
+{% block main %}
+<div class="sell_margin">
+    <h1 id="portfolio">Sell Stock</h1>
+    <h1 id="elongate">This is just written to elongate page</h1>
+
+    <form action="/sell" method="post">
+        <div class="form-group">
+
+            <select name="symbol">
+                <option disabled selected>Symbol</option>
+                {% for stock in symbols %}
+                <option>{{ stock.symbol }}</option>
+                {% endfor %}
+            </select> <br> <br>
+
+            <input autofocus class="form-control" name="shares" placeholder="Shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+</div>
+{% endblock %}

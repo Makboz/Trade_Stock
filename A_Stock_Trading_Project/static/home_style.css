@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(coins.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    font-size: 80px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+@media screen and (max-width: 540px) {
+    .banner {
+      font-size: 65px;
+    }
+}
+
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)), url(another.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-size: 80px;
+}
+
+.margin {
+    margin-top: 16%;
+}
+
+.my_row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.my_col {
+    flex-basis: 50%;
+}
+
+
+.row h1 {
+    color: #fff;
+    font-size: 1.35em;
+    margin-bottom: 55px;
+    font-family: 'Bad Script', cursive;
+}
+
+p {
+    color: #fff;
+    font-size: 0.25em;
+    line-height: 24px;
+}
+
+.my_button {
+    width: 170px;
+    color: #000;
+    font-size: 0.24em;
+    padding: 11px 0;
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.yellow {
+    background-color: #85bb65;
+    color: black;
+}
+
+.white {
+    background: white;
+    color: #000;
+}
+
+.yellow:hover {
+    background: black;
+    color: #85bb65;
+    font-weight: bold;
+}
+
+.white:hover {
+    background: grey;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.further {
+    background: black;
+}
+
+.margin_top {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card, .back {
+    background-image: linear-gradient(rgba(0, 00, 0, 0.75), rgba(0, 0, 0, 0.55)), url(graph.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    border-radius: 40px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+.card h5 {
+    color: white;
+    text-shadow: 0 0 15px #000;
+    font-size: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 0.5px solid white;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.further .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 770px) {
+    .banner {
+      font-size: 65px;
+      width: 100%;
+      height: 70vh;
+    }
+    p {
+        line-height: 22px;
+        width: 550px;
+    }
+
+    .margin {
+        margin-left: -10px;
+        margin-top: 200px;
+    }
+
+    .my_button {
+        margin-top: 0px;
+        margin-right: 10px;
+        width: 140px;
+        font-size: 0.27em;
+        padding: 11px 0;
+    }
+
+    .card p {
+        width: 18rem;
+    }
+  }
+
+
+  @media screen and (max-width: 692px) {
+    .banner {
+      font-size: 60px;
+        width: 100%;
+        height: 60vh;
+    }
+    p {
+        line-height: 18px;
+        width: 550px;
+    }
+
+    .row h1 {
+        font-size: 1.25em;
+    }
+
+    .margin {
+        margin-left: 0px;
+        margin-top: 200px;
+    }
+
+    .my_button {
+        margin-top: 0px;
+        margin-right: 10px;
+        width: 140px;
+        font-size: 0.27em;
+        padding: 11px 0;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .banner {
+      font-size: 40px;
+      width: 100%;
+      height: 50vh;
+    }
+    p {
+        line-height: 12px;
+        width: 550px;
+        font-size: 0.23em;
+    }
+
+    .row h1 {
+        margin-bottom: 33px;
+        font-size: 1.20em;
+    }
+
+    .margin {
+        margin-left: 0px;
+        margin-top: 100px;
+    }
+
+    .my_button {
+        margin-top: 0px;
+        margin-right: 8px;
+        width: 90px;
+        font-size: 0.28em;
+        padding: 8px 0;
+    }
+
+
+
+    .card {
+        width: 4rem;
+        height: 28vh;
+        left: 8.5%;
+        margin-right: 5%; 
+        padding-top: 0px;
+        padding-bottom: -5px;
+    }
+
+    .card-text {
+        position: relative;
+        left: -3.3%;
+    }
+    
+    
+    .card h5 {
+        font-size: 20px;
+    }
+    
+    .card p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+  }

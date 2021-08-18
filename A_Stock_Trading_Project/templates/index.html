@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1 id="portfolio" style="margin-top: -5%;">Your Portfolio</h1>
+    <h1 id="elongate">This is just written to elongate page</h1>
+    
+    <table>
+        <thead id="table_head">
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+        </thead>
+        <tbody>
+            {% for user in profile %}
+            <tr>
+                <td>{{ user.symbol }}</td>
+                <td>{{ user.company_name }}</td>
+                <td>{{ user.shares }}</td>
+                <td>{{ user.price | format_money}}</td>
+                <td>{{ user.value | format_money}}</td>
+            </tr>
+            {% endfor %}
+            
+            <tr>
+                <td>Cash</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ cash | format_money }}</td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ total_cash | format_money }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <footer class="small text-center text-muted">
+        Data provided for free by <a href="https://iextrading.com/developer">IEX</a>. View <a
+            href="https://iextrading.com/api-exhibit-a/">IEX’s Terms of Use</a>.
+    </footer>
+{% endblock %}
