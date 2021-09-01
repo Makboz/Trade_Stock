@@ -1,5 +1,5 @@
-# Trade_Stock
-:money_with_wings: Trade $tock is a web application that simulates the real-life workings of the equities market for users to build their virtual trading portfolio based on real-time stock data.
+# Trade_Stock :money_with_wings:
+Trade $tock is a web application that simulates the real-life workings of the equities market for users to build their virtual trading portfolio based on real-time stock data.
 
 Check out the website: https://tradestock.pythonanywhere.com/
 ![linkedin_background](https://user-images.githubusercontent.com/64204835/131700529-0815d061-be4d-4f03-8566-7527b00f09f6.png)
@@ -12,6 +12,7 @@ Check out the website: https://tradestock.pythonanywhere.com/
 
 
 # Development
+#### Flask, Python, SQLite, HTML/CSS, Bootstrap
 - Implemented MVC architecture and developed the back end of the application using Python and Flask framework.
 - Used IEX Cloud API to request real time stock data for the user to trade in real-life circumstances.
 - Created multiple tables in SQLite to store user’s profile from username/password to the shares/cash they own and all their past transactions.
