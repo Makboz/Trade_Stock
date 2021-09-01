@@ -1,5 +1,5 @@
 # Trade_Stock
-Trade $tock is a web application that simulates the real-life workings of the equities market for users to build their virtual trading portfolio based on real-time stock data.
+:money_with_wings: Trade $tock is a web application that simulates the real-life workings of the equities market for users to build their virtual trading portfolio based on real-time stock data.
 
 Check out the website: https://tradestock.pythonanywhere.com/
 ![linkedin_background](https://user-images.githubusercontent.com/64204835/131700529-0815d061-be4d-4f03-8566-7527b00f09f6.png)
